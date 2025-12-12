@@ -39,7 +39,7 @@
   <rect width="1280" height="720" fill="white"/>
   
   <!-- Title -->
-  <text x="640" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#333">Vishnu v1 Architecture</text>
+  <text x="640" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="32" fill="#333">Architecture</text>
   <text x="640" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#666">Prototype-Oriented Distillation for Federated Continual Self-Supervised Vision</text>
 
   <!-- ================= LEFT SIDE: CLIENT (EDGE) ================= -->

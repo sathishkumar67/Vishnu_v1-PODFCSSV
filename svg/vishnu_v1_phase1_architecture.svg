@@ -22,7 +22,7 @@
   
   <!-- Title -->
   <text x="50" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#333">
-    Proposed Architecture: Vishnu v1
+    Proposed Architecture
   </text>
   <text x="50" y="80" font-family="Arial, sans-serif" font-size="16" fill="#666">
     Phase 1: Client Engine Architecture
