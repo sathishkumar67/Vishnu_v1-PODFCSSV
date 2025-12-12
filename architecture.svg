@@ -1,0 +1,87 @@
+<svg width="900" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for gradients and markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#28a745" />
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#007bff" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <!-- CLIENT SIDE CONTAINER (Compact) -->
+  <rect x="50" y="40" width="300" height="300" rx="15" ry="15" fill="#f0f4f8" stroke="#d1d9e6" stroke-width="3" />
+  <text x="200" y="75" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333" text-anchor="middle">Client</text>
+  
+  <!-- Client Components -->
+  
+  <!-- 1. Input Stream -->
+  <text x="85" y="115" font-family="Arial, sans-serif" font-size="12" fill="#666">Input</text>
+  <line x1="85" y1="125" x2="130" y2="125" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <!-- 2. Backbone (Frozen) -->
+  <rect x="140" y="100" width="120" height="40" rx="5" fill="#ced4da" stroke="#adb5bd" stroke-width="2" />
+  <text x="200" y="125" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#495057" text-anchor="middle">Backbone</text>
+  
+  <!-- Arrow Down -->
+  <line x1="200" y1="145" x2="200" y2="170" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <!-- 3. Adapter (Trainable) -->
+  <rect x="140" y="175" width="120" height="40" rx="5" fill="#ffcca0" stroke="#fd7e14" stroke-width="2" />
+  <text x="200" y="200" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d35400" text-anchor="middle">Adapter</text>
+  
+  <!-- Arrow Down -->
+  <line x1="200" y1="220" x2="200" y2="245" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <!-- 4. DPM Bank (Database) -->
+  <path d="M140,255 C140,245 260,245 260,255 L260,285 C260,295 140,295 140,285 Z" fill="#a0cfff" stroke="#007bff" stroke-width="2" />
+  <ellipse cx="200" cy="255" rx="60" ry="8" fill="#cce5ff" stroke="#007bff" stroke-width="2" />
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#004085" text-anchor="middle">DPM Bank</text>
+
+
+  <!-- SERVER SIDE CONTAINER (Compact) -->
+  <rect x="550" y="40" width="300" height="300" rx="15" ry="15" fill="#fdf0f0" stroke="#e6d1d1" stroke-width="3" />
+  <text x="700" y="75" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333" text-anchor="middle">Server</text>
+
+  <!-- Server Components -->
+  
+  <!-- Aggregation Box -->
+  <rect x="620" y="110" width="160" height="50" rx="10" fill="#e9ecef" stroke="#6c757d" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="700" y="132" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Combine</text>
+  <text x="700" y="150" font-family="Arial, sans-serif" font-size="11" fill="#666" text-anchor="middle">(Aggregation)</text>
+
+  <!-- Arrow Down -->
+  <line x1="700" y1="165" x2="700" y2="205" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <!-- Distillation Box -->
+  <rect x="620" y="210" width="160" height="50" rx="10" fill="#ffe8cc" stroke="#fd7e14" stroke-width="2" />
+  <text x="700" y="232" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d35400" text-anchor="middle">Distillation</text>
+  <text x="700" y="250" font-family="Arial, sans-serif" font-size="11" fill="#666" text-anchor="middle">(Refining)</text>
+
+
+  <!-- CONNECTING ARROWS (THE CYCLE) -->
+
+  <!-- Sending Arrow (Top) -->
+  <path d="M 350 195 Q 470 150 550 200" stroke="#28a745" stroke-width="3" fill="none" marker-end="url(#arrowhead-green)" />
+  <rect x="390" y="135" width="120" height="25" rx="5" fill="#e6fffa" stroke="#28a745" />
+  <text x="450" y="152" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e7e34" text-anchor="middle">Prototypes</text>
+
+  <!-- Broadcast Arrow (Bottom) -->
+  <path d="M 550 235 Q 450 255 350 215" stroke="#007bff" stroke-width="3" fill="none" marker-end="url(#arrowhead-blue)" />
+  <rect x="390" y="255" width="120" height="25" rx="5" fill="#e6f2ff" stroke="#007bff" />
+  <text x="450" y="272" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0056b3" text-anchor="middle">Broadcast</text>
+
+  <!-- Legend -->
+  <rect x="50" y="360" width="15" height="15" fill="#ced4da" stroke="#adb5bd" />
+  <text x="75" y="372" font-family="Arial, sans-serif" font-size="12" fill="#555">Frozen (Static)</text>
+
+  <rect x="200" y="360" width="15" height="15" fill="#ffcca0" stroke="#fd7e14" />
+  <text x="225" y="372" font-family="Arial, sans-serif" font-size="12" fill="#555">Trainable (Learning)</text>
+
+</svg>
