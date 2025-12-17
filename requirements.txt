@@ -1,5 +1,8 @@
 torch
 torchvision
+torchaudio
+matplotlib
+pyyalm
 numpy
 timm
 scikit-learn
